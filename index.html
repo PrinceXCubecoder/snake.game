@@ -1,1 +1,150 @@
-gg
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[आपका नाम] - रिज्यूम</title>
+<style>
+  :root { --bg:#f4f6f8; --card:#fff; --text:#222; --accent:#2563eb; --muted:#666; }
+  body.dark { --bg:#111827; --card:#1f2937; --text:#f3f4f6; --accent:#60a5fa; --muted:#9ca3af; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:'Segoe UI',Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  .wrap { max-width:850px; margin:20px auto; background:var(--card); border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,.1); overflow:hidden; }
+  header { background:var(--accent); color:#fff; padding:30px; }
+  header h1 { margin:0; font-size:2rem; }
+  header p { margin:4px 0 0; opacity:.9; }
+  .contact { display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:12px; font-size:.9rem; }
+  .contact a { color:#fff; text-decoration:none; }
+  main { padding:25px 30px; }
+  section { margin-bottom:26px; }
+  h2 { color:var(--accent); border-bottom:2px solid var(--accent); padding-bottom:4px; font-size:1.2rem; text-transform:uppercase; letter-spacing:1px; }
+  .item { margin-bottom:14px; }
+  .item h3 { margin:0; font-size:1.05rem; }
+  .meta { color:var(--muted); font-size:.85rem; }
+  ul { margin:6px 0 0 18px; padding:0; }
+  .skills { display:flex; flex-wrap:wrap; gap:8px; }
+  .skill { background:var(--accent); color:#fff; padding:4px 12px; border-radius:20px; font-size:.85rem; }
+  .bar { margin-bottom:10px; }
+  .bar span { font-size:.9rem; }
+  .track { height:8px; background:#cbd5e1; border-radius:5px; overflow:hidden; }
+  .fill { height:100%; width:0; background:var(--accent); transition:width 1.2s; }
+  .tools { text-align:center; padding:15px; }
+  button { background:var(--accent); color:#fff; border:0; padding:10px 18px; margin:4px; border-radius:8px; cursor:pointer; font-size:.95rem; }
+  @media print { .tools { display:none; } body { background:#fff; } .wrap { box-shadow:none; margin:0; } }
+  @media (max-width:600px) { header, main { padding:18px; } header h1 { font-size:1.5rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>[आपका पूरा नाम]</h1>
+    <p>[आपका पद, जैसे: वेब डेवलपर / डिज़ाइनर]</p>
+    <div class="contact">
+      <span>📞 [फोन नंबर]</span>
+      <a href="mailto:[email]">✉️ [ईमेल]</a>
+      <span>📍 [शहर, राज्य]</span>
+      <a href="[linkedin-url]" target="_blank">🔗 LinkedIn</a>
+      <a href="[github-url]" target="_blank">💻 GitHub</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>परिचय</h2>
+      <p>[2-3 लाइन में अपने बारे में: आप क्या करते हैं, कितना अनुभव है, किसमें माहिर हैं और क्या करियर लक्ष्य है।]</p>
+    </section>
+
+    <section>
+      <h2>अनुभव</h2>
+      <div class="item">
+        <h3>[पद] - [कंपनी का नाम]</h3>
+        <div class="meta">[शुरू] – [अंत / अभी तक] | [शहर]</div>
+        <ul>
+          <li>[काम या उपलब्धि 1]</li>
+          <li>[काम या उपलब्धि 2]</li>
+          <li>[काम या उपलब्धि 3]</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>[पद] - [कंपनी का नाम]</h3>
+        <div class="meta">[शुरू] – [अंत] | [शहर]</div>
+        <ul><li>[काम या उपलब्धि]</li></ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>प्रोजेक्ट्स</h2>
+      <div class="item">
+        <h3>[प्रोजेक्ट का नाम]</h3>
+        <div class="meta">टेक: [HTML, CSS, JS ...]</div>
+        <ul><li>[प्रोजेक्ट क्या करता है और आपकी भूमिका]</li></ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>शिक्षा</h2>
+      <div class="item">
+        <h3>[डिग्री / कोर्स]</h3>
+        <div class="meta">[कॉलेज / यूनिवर्सिटी] | [साल] | [प्रतिशत / CGPA]</div>
+      </div>
+      <div class="item">
+        <h3>12वीं</h3>
+        <div class="meta">[स्कूल] | [साल] | [प्रतिशत]</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>स्किल्स</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">[अपनी स्किल]</span>
+      </div>
+      <br>
+      <div class="bar"><span>[स्किल 1] — 90%</span><div class="track"><div class="fill" data-w="90"></div></div></div>
+      <div class="bar"><span>[स्किल 2] — 75%</span><div class="track"><div class="fill" data-w="75"></div></div></div>
+      <div class="bar"><span>[स्किल 3] — 60%</span><div class="track"><div class="fill" data-w="60"></div></div></div>
+    </section>
+
+    <section>
+      <h2>सर्टिफिकेट / उपलब्धियाँ</h2>
+      <ul>
+        <li>[सर्टिफिकेट या अवॉर्ड, साल]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>भाषाएँ</h2>
+      <p>हिंदी (मातृभाषा), अंग्रेज़ी ([स्तर])</p>
+    </section>
+
+    <section>
+      <h2>रुचियाँ</h2>
+      <p>[आपकी हॉबीज़]</p>
+    </section>
+  </main>
+
+  <div class="tools">
+    <button id="themeBtn">🌙 डार्क मोड</button>
+    <button onclick="window.print()">🖨️ प्रिंट / PDF</button>
+  </div>
+</div>
+
+<script>
+  // स्किल बार एनिमेशन
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.fill').forEach(el => {
+      el.style.width = el.dataset.w + '%';
+    });
+  });
+
+  // डार्क मोड
+  const btn = document.getElementById('themeBtn');
+  btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btn.textContent = document.body.classList.contains('dark') ? '☀️ लाइट मोड' : '🌙 डार्क मोड';
+  });
+</script>
+</body>
+</html>
